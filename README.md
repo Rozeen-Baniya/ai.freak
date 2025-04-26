@@ -1,7 +1,6 @@
 # ai.freak
 
-![ai.freak Banner](![https://github.com/Rozeen-Baniya/ai.freak/blob/5098a787d37fdc951236c0738e165f13ab717e86/banner.png])
-)
+
 
 ![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fyourwebsite.com&label=Live&style=flat-square&color=brightgreen)
 ![GitHub](https://img.shields.io/github/license/yourusername/ai.freak?style=flat-square)
