@@ -802,6 +802,118 @@
         </div>
     </footer>
 
-    
+     <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Dark mode toggle
+        const toggle = document.getElementById('toggle');
+        const footerToggle = document.getElementById('footer-toggle');
+        
+        function toggleDarkMode(isDark) {
+            if (isDark) {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+        
+        // Check for saved user preference
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            toggle.checked = true;
+            footerToggle.checked = true;
+            toggleDarkMode(true);
+        } else if (localStorage.getItem('darkMode') === 'disabled') {
+            toggle.checked = false;
+            footerToggle.checked = false;
+            toggleDarkMode(false);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            // Check system preference
+            toggle.checked = true;
+            footerToggle.checked = true;
+            toggleDarkMode(true);
+        }
+        
+        // Toggle dark mode
+        toggle.addEventListener('change', function() {
+            footerToggle.checked = toggle.checked;
+            toggleDarkMode(toggle.checked);
+        });
+        
+        footerToggle.addEventListener('change', function() {
+            toggle.checked = footerToggle.checked;
+            toggleDarkMode(footerToggle.checked);
+        });
+        
+        // Form submission
+        document.getElementById('tool-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate form submission
+            setTimeout(function() {
+                document.getElementById('tool-form').reset();
+                document.getElementById('success-message').classList.remove('hidden');
+                
+                // Hide success message after 5 seconds
+                setTimeout(function() {
+                    document.getElementById('success-message').classList.add('hidden');
+                }, 5000);
+            }, 1000);
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Load More Tools button functionality
+        document.querySelector('a[href="#all-tools"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('all-tools').classList.remove('hidden');
+            window.scrollTo({
+                top: document.getElementById('all-tools').offsetTop - 80,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Add fade-in animation when elements come into view
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        fadeElements.forEach(element => {
+            fadeInObserver.observe(element);
+        });
+    </script>  
 </body>
 </html>
