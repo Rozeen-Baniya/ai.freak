@@ -515,6 +515,106 @@
         </div>
     </section>
 
+    <!-- All Tools Section (hidden by default) -->
+    <section id="all-tools" class="py-16 px-6 bg-gray-50 dark:bg-slate-800 hidden">
+        <div class="container mx-auto">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">All AI Tools</h2>
+                <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Complete collection of all AI tools in our database.</p>
+            </div>
+            
+            <!-- Additional tools would be loaded here -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-in">
+                <!-- Additional tool cards would be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Submit Tool Section -->
+    <section id="submit" class="py-16 px-6 bg-gray-50 dark:bg-slate-800">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">Submit Your AI Tool</h2>
+                <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Have an AI tool you'd like to feature on our platform? Fill out the form below.</p>
+            </div>
+            
+            <div class="bg-white dark:bg-slate-700 rounded-xl shadow-lg p-8 fade-in">
+                <form id="tool-form">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="tool-name" class="block text-gray-700 dark:text-gray-300 mb-2">Tool Name*</label>
+                            <input type="text" id="tool-name" class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-slate-600 dark:bg-slate-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                        </div>
+                        <div>
+                            <label for="website" class="block text-gray-700 dark:text-gray-300 mb-2">Website URL*</label>
+                            <input type="url" id="website" class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-slate-600 dark:bg-slate-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="description" class="block text-gray-700 dark:text-gray-300 mb-2">Description*</label>
+                        <textarea id="description" rows="4" class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-slate-600 dark:bg-slate-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500" required></textarea>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="category" class="block text-gray-700 dark:text-gray-300 mb-2">Category*</label>
+                            <select id="category" class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-slate-600 dark:bg-slate-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                                <option value="">Select a category</option>
+                                <option value="writing">Writing</option>
+                                <option value="design">Design</option>
+                                <option value="code">Code</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="video">Video</option>
+                                <option value="chatbots">Chatbots</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="pricing" class="block text-gray-700 dark:text-gray-300 mb-2">Pricing Model*</label>
+                            <select id="pricing" class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-slate-600 dark:bg-slate-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                                <option value="">Select pricing</option>
+                                <option value="free">Free</option>
+                                <option value="freemium">Freemium</option>
+                                <option value="paid">Paid</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="logo" class="block text-gray-700 dark:text-gray-300 mb-2">Tool Logo</label>
+                        <div class="flex items-center justify-center w-full">
+                            <label for="logo" class="flex flex-col items-center justify-center w-full h-32 border-2 border-gray-300 dark:border-slate-600 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:bg-slate-800 hover:bg-gray-100 dark:hover:bg-slate-700">
+                                <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                    <i class="fas fa-cloud-upload-alt text-gray-400 text-3xl mb-2"></i>
+                                    <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400">PNG, JPG (MAX. 2MB)</p>
+                                </div>
+                                <input id="logo" type="file" class="hidden" accept="image/*">
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center mb-6">
+                        <input id="terms" type="checkbox" class="w-4 h-4 text-indigo-600 bg-gray-100 border-gray-300 rounded focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" required>
+                        <label for="terms" class="ml-2 text-sm text-gray-600 dark:text-gray-300">I confirm that this is my tool or I have permission to submit it</label>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="px-8 py-3 bg-indigo-600 text-white rounded-full font-semibold hover:bg-indigo-700 transition duration-300 shadow-lg">
+                            Submit Tool
+                        </button>
+                    </div>
+                </form>
+                
+                <div id="success-message" class="hidden mt-6 p-4 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-lg text-center">
+                    <i class="fas fa-check-circle text-green-500 dark:text-green-300 text-2xl mb-2"></i>
+                    <p class="font-semibold">Thank you for your submission!</p>
+                    <p>Your tool has been submitted for review. We'll notify you once it's live on our platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     
 </body>
