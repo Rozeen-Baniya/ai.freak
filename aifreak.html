@@ -270,6 +270,251 @@
         </div>
     </section>
 
+    <!-- AI Tools Section -->
+    <section id="tools" class="py-16 px-6 bg-white dark:bg-slate-900">
+        <div class="container mx-auto">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">Featured AI Tools</h2>
+                <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Handpicked selection of the most powerful and innovative AI tools available today.</p>
+            </div>
+            
+            <!-- Filters -->
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4 fade-in">
+                <div class="flex flex-wrap gap-3 w-full md:w-auto">
+                    <select class="px-4 py-2 rounded-full border border-gray-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option>All Categories</option>
+                        <option>Writing</option>
+                        <option>Design</option>
+                        <option>Code</option>
+                        <option>Marketing</option>
+                        <option>Video</option>
+                        <option>Chatbots</option>
+                    </select>
+                    
+                    <select class="px-4 py-2 rounded-full border border-gray-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option>All Pricing</option>
+                        <option>Free</option>
+                        <option>Freemium</option>
+                        <option>Paid</option>
+                    </select>
+                    
+                    <select class="px-4 py-2 rounded-full border border-gray-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option>Sort By</option>
+                        <option>Most Popular</option>
+                        <option>Newest</option>
+                        <option>Alphabetical</option>
+                    </select>
+                </div>
+                
+                <div class="relative w-full md:w-64">
+                    <input type="text" placeholder="Search tools..." class="pl-10 pr-4 py-2 rounded-full border border-gray-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 w-full">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+            
+            <!-- Tools Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-in">
+                <!-- Tool Card 1 -->
+                <div class="card-hover bg-white dark:bg-slate-800 rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-xl">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-indigo-100 dark:bg-indigo-900 flex items-center justify-center mr-4">
+                                <i class="fas fa-pen-fancy text-indigo-600 dark:text-indigo-300 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800 dark:text-white">Jasper AI</h3>
+                                <div class="flex items-center mt-1">
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="text-gray-500 dark:text-gray-400 text-sm ml-2">4.7 (1.2k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">AI-powered writing assistant that helps you create high-quality content faster.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-xs rounded-full">Writing</span>
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Freemium</span>
+                        </div>
+                        <a href="https://www.jasper.ai" target="_blank" class="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition">
+                            Visit Website <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Tool Card 2 -->
+                <div class="card-hover bg-white dark:bg-slate-800 rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-xl">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-pink-100 dark:bg-pink-900 flex items-center justify-center mr-4">
+                                <i class="fas fa-paint-brush text-pink-600 dark:text-pink-300 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800 dark:text-white">Midjourney</h3>
+                                <div class="flex items-center mt-1">
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-500 dark:text-gray-400 text-sm ml-2">4.5 (890)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">AI art generator that creates stunning images from text prompts.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 text-xs rounded-full">Design</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full">Paid</span>
+                        </div>
+                        <a href="https://www.midjourney.com" target="_blank" class="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition">
+                            Visit Website <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Tool Card 3 -->
+                <div class="card-hover bg-white dark:bg-slate-800 rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-xl">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center mr-4">
+                                <i class="fas fa-code text-purple-600 dark:text-purple-300 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800 dark:text-white">GitHub Copilot</h3>
+                                <div class="flex items-center mt-1">
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-500 dark:text-gray-400 text-sm ml-2">4.9 (2.4k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">AI pair programmer that helps you write better code faster.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full">Code</span>
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Freemium</span>
+                        </div>
+                        <a href="https://github.com/features/copilot" target="_blank" class="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition">
+                            Visit Website <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Tool Card 4 -->
+                <div class="card-hover bg-white dark:bg-slate-800 rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-xl">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-4">
+                                <i class="fas fa-chart-line text-blue-600 dark:text-blue-300 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800 dark:text-white">Copy.ai</h3>
+                                <div class="flex items-center mt-1">
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="text-gray-500 dark:text-gray-400 text-sm ml-2">4.6 (980)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Generate marketing copy, product descriptions, and more with AI.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full">Marketing</span>
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Freemium</span>
+                        </div>
+                        <a href="https://www.copy.ai" target="_blank" class="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition">
+                            Visit Website <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Tool Card 5 -->
+                <div class="card-hover bg-white dark:bg-slate-800 rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-xl">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-4">
+                                <i class="fas fa-video text-green-600 dark:text-green-300 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800 dark:text-white">Runway ML</h3>
+                                <div class="flex items-center mt-1">
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-500 dark:text-gray-400 text-sm ml-2">4.3 (760)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">AI-powered video editing tools for creators and professionals.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Video</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full">Paid</span>
+                        </div>
+                        <a href="https://runwayml.com" target="_blank" class="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition">
+                            Visit Website <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Tool Card 6 -->
+                <div class="card-hover bg-white dark:bg-slate-800 rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-xl">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-yellow-100 dark:bg-yellow-900 flex items-center justify-center mr-4">
+                                <i class="fas fa-robot text-yellow-600 dark:text-yellow-300 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800 dark:text-white">ChatGPT</h3>
+                                <div class="flex items-center mt-1">
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-500 dark:text-gray-400 text-sm ml-2">5.0 (5.7k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Advanced conversational AI that can assist with a wide range of tasks.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs rounded-full">Chatbots</span>
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Freemium</span>
+                        </div>
+                        <a href="https://chat.openai.com" target="_blank" class="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition">
+                            Visit Website <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 fade-in">
+                <a href="#all-tools" class="px-8 py-3 bg-indigo-600 text-white rounded-full font-semibold hover:bg-indigo-700 transition duration-300 shadow-lg">
+                    Load More Tools
+                </a>
+            </div>
+        </div>
+    </section>
+
 
     
 </body>
