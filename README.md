@@ -35,7 +35,8 @@ Explore, compare, and find the perfect AI tool for your needs 🚀.
 ## 🧠 Inspiration
 
 In today's fast-evolving AI ecosystem, finding the perfect tool can be overwhelming.  
-**ai.freak** is designed to make it easier — a single platform to discover, learn about, and choose from the best AI tools out there.
+**ai.freak** is designed to make it easier — a single platform to discover, learn about, and choose from the best AI tools out there. All new ai tools will be avilable here. 
+NOTE: this is just the concept and idea. Feel free to use it. Thank you...
 
 ---
 
